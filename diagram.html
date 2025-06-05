@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad:true });
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .mermaid {
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>📈 Project Dependency Diagram</h2>
+  <div class="mermaid">
+graph TD
+mini_proj["📦 <b>mini_proj</b><br/>🛠️ <b>Functions:</b> augment_landmarks, __init__, evolve_optimizer, __init__, optimize_hyperparams, __init__, init_model, add_template, geometric_match, train, smooth_prediction, predict, get_landmarks, __init__, transform, main<br/>📘 <b>Classes:</b> AELM, MRFO, HybridGestureRecognizer, GestureTransformer"]
+collections[" collections"]
+cv2[" cv2"]
+imgaug[" imgaug"]
+mediapipe[" mediapipe"]
+numpy[" numpy"]
+os[" os"]
+random[" random"]
+scipy[" scipy"]
+sklearn[" sklearn"]
+sounddevice[" sounddevice"]
+streamlit[" streamlit"]
+streamlit_webrtc[" streamlit_webrtc"]
+tensorflow[" tensorflow"]
+time[" time"]
+mini_proj --> streamlit
+mini_proj --> sklearn
+mini_proj --> random
+mini_proj --> imgaug
+mini_proj --> os
+mini_proj --> tensorflow
+mini_proj --> sounddevice
+mini_proj --> numpy
+mini_proj --> mediapipe
+mini_proj --> streamlit_webrtc
+mini_proj --> cv2
+mini_proj --> time
+mini_proj --> collections
+mini_proj --> scipy
+  </div>
+</body>
+</html>
