@@ -1,0 +1,5 @@
+GitPython
+markdown2
+huggingface_hub
+langchain
+langchain_community
